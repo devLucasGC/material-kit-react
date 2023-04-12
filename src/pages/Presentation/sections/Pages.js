@@ -22,7 +22,6 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
 
 // Presentation page components
@@ -52,19 +51,12 @@ function Pages() {
           alignItems="center"
           sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
         >
-          <MKBadge
-            variant="contained"
-            color="info"
-            badgeContent="boost creativity"
-            container
-            sx={{ mb: 2 }}
-          />
           <MKTypography variant="h2" fontWeight="bold">
-            With our coded pages
+            Novidades
           </MKTypography>
           <MKTypography variant="body1" color="text">
-            The easiest way to get started is to use one of our
-            <br /> pre-built example pages.
+            Novidades Novidades Novidades Novidades Novidades Novidades Novidades Novidades
+            Novidades Novidades
           </MKTypography>
         </Grid>
       </Container>
@@ -78,11 +70,10 @@ function Pages() {
           <Grid item xs={12} lg={3}>
             <MKBox position="sticky" top="100px" pb={{ xs: 2, lg: 6 }}>
               <MKTypography variant="h3" fontWeight="bold" mb={1}>
-                Presentation Pages for Company, Landing Pages, Blogs and Support
+                Aqui você pode acompanhar as mais novas notícias sobre a Incortec
               </MKTypography>
               <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
-                These is just a small selection of the multiple possibitilies you have. Focus on the
-                business, not on the design.
+                Novas parcerias, projetos e muito mais
               </MKTypography>
             </MKBox>
           </Grid>
