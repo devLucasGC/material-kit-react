@@ -40,6 +40,29 @@ import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/Screenshot_2.png";
+import { ThemeProvider, createTheme } from "@mui/material";
+
+const blue = createTheme({
+  palette: {
+    primary: {
+      main: "#354491",
+    },
+    secondary: {
+      main: "#ffffff",
+    },
+  },
+});
+
+const green = createTheme({
+  palette: {
+    primary: {
+      main: "#52a9a7",
+    },
+    secondary: {
+      main: "#ffffff",
+    },
+  },
+});
 
 function Presentation() {
   return (
@@ -83,48 +106,54 @@ function Presentation() {
           <BuiltByDevelopers />
         </Container>
         <Container>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                variant="gradient"
-                color="info"
-                icon="flag"
-                title="Getting Started"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
-                  label: "Let's start",
-                }}
-              />
+          <ThemeProvider theme={blue}>
+            <Grid container spacing={3}>
+              <Grid item xs={12} lg={4}>
+                <FilledInfoCard
+                  variant="gradient"
+                  color="primary"
+                  icon="flag"
+                  title="Novos projetos em processo"
+                  description="Check the possible ways of working with our product and the necessary files for building your own project."
+                  action={{
+                    type: "external",
+                    route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                    label: "Leia aqui",
+                  }}
+                />
+              </Grid>
+              <ThemeProvider theme={green}>
+                <Grid item xs={12} lg={4}>
+                  <FilledInfoCard
+                    variant="gradient"
+                    color="primary"
+                    icon="precision_manufacturing"
+                    title="Parceria nova chegando"
+                    description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
+                    action={{
+                      type: "external",
+                      route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
+                      label: "Leia aqui",
+                    }}
+                  />
+                </Grid>
+              </ThemeProvider>
+              <Grid item xs={12} lg={4}>
+                <FilledInfoCard
+                  variant="gradient"
+                  color="primary"
+                  icon="apps"
+                  title="Notícia relâmpago"
+                  description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
+                  action={{
+                    type: "external",
+                    route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+                    label: "Leia aqui",
+                  }}
+                />
+              </Grid>
             </Grid>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                color="info"
-                icon="precision_manufacturing"
-                title="Plugins"
-                description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
-                  label: "Read more",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} lg={4}>
-              <FilledInfoCard
-                color="info"
-                icon="apps"
-                title="Components"
-                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-                  label: "Read more",
-                }}
-              />
-            </Grid>
-          </Grid>
+          </ThemeProvider>
         </Container>
       </Card>
       <MKBox pt={6} px={1} mt={6}>

@@ -13,82 +13,38 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/sections";
+import TerminalIcon from "@mui/icons-material/Terminal";
+import CodeIcon from "@mui/icons-material/Code";
+import GroupsIcon from "@mui/icons-material/Groups";
 
 export default [
   {
+    icon: <TerminalIcon sx={{ width: "40%", height: "40%" }} />,
     title: "Soluções INFOR",
-    description:
-      "Soluções INFOR Soluções INFOR Soluções INFOR Soluções INFOR Soluções INFOR Soluções INFOR",
     items: [
       {
-        image: `${imagesPrefix}/headers.jpg`,
-        name: "Page Headers",
-        count: 10,
-        route: "/sections/page-sections/page-headers",
-      },
-      {
-        image: `${imagesPrefix}/features.jpg`,
-        name: "Features",
-        count: 14,
-        route: "/sections/page-sections/features",
-      },
-      {
-        image: `${imagesPrefix}/pricing.jpg`,
-        name: "Pricing",
-        count: 8,
-        pro: true,
+        description:
+          "Consultoria especializada na implementação de ERP Infor. Agilidade, qualidade e segurança em serviços nos melhores sistemas de gestão empresarial e de gestão de armazém do mercado.",
       },
     ],
   },
   {
+    icon: <GroupsIcon sx={{ width: "40%", height: "40%" }} />,
     title: "Alocação de Recursos",
-    description:
-      "Alocação de Recursos Alocação de Recursos Alocação de Recursos Alocação de Recursos Alocação de Recursos",
     items: [
       {
-        image: `${imagesPrefix}/navbars.jpg`,
-        name: "Navbars",
-        count: 4,
-        route: "/sections/navigation/navbars",
-      },
-      {
-        image: `${imagesPrefix}/nav-tabs.jpg`,
-        name: "Nav Tabs",
-        count: 2,
-        route: "/sections/navigation/nav-tabs",
-      },
-      {
-        image: `${imagesPrefix}/pagination.jpg`,
-        name: "Pagination",
-        count: 3,
-        route: "/sections/navigation/pagination",
+        description:
+          "Alocação de profissionais de TI, para atuar junto ao cliente, apoiando nas atividades diárias, como gerente de projetos, analista de sistema, desenvolvedores, arquiteto de software, entre outros.",
       },
     ],
   },
   {
+    icon: <CodeIcon sx={{ width: "40%", height: "40%" }} />,
     title: "Fábrica de Software",
-    description:
-      "Fábrica de Software Fábrica de Software Fábrica de Software Fábrica de Software Fábrica de Software",
     items: [
       {
-        image: `${imagesPrefix}/newsletters.jpg`,
-        name: "Newsletters",
-        count: 6,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/contact-sections.jpg`,
-        name: "Contact Sections",
-        count: 8,
-        pro: true,
-      },
-      {
-        image: `${imagesPrefix}/forms.jpg`,
-        name: "Forms",
-        count: 3,
-        route: "/sections/input-areas/forms",
+        description:
+          "Desenvolvimento de projetos de software, aplicativos mobile, aplicações web, desktop, integrações, desenvolvimento de relatórios, indicadores e Dashboards.",
       },
     ],
   },

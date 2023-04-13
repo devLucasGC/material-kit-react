@@ -13,28 +13,24 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-const imagesPrefix =
-  "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/pages";
-
 export default [
   {
-    image: `${imagesPrefix}/about-us.jpg`,
-    name: "About Us Page",
+    image: "assets/images/Infor.jpg",
+    name: "Breve: nova parceria",
     route: "/pages/landing-pages/about-us",
   },
   {
-    image: `${imagesPrefix}/contact.jpg`,
-    name: "Contact Us Page",
+    image: "assets/images/ERP.jpg",
+    name: "O quê considerar na escolha de um ERP",
     route: "/pages/landing-pages/contact-us",
   },
   {
-    image:
-      "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/account/signin-basic.jpg",
-    name: "Sign In Page",
+    image: "assets/images/ERPmoderno.jpg",
+    name: "Por que um ERP moderno?",
     route: "/pages/authentication/sign-in",
   },
   {
-    image: `${imagesPrefix}/author.jpg`,
+    image: "assets/images/ERPmoderno.jpg",
     name: "Author Page",
     route: "/pages/landing-pages/author",
   },

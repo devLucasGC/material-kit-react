@@ -29,17 +29,21 @@ function Counters() {
           container
           item
           xs={12}
-          lg={6}
+          lg={12}
           flexDirection="column"
           alignItems="center"
-          sx={{ textAlign: "center", my: 6, mx: "auto", px: 0.75 }}
+          sx={{ textAlign: "center", my: 10, mx: "auto", px: 0.75 }}
         >
           <MKTypography variant="h2" fontWeight="bold">
-            Sobre
+            SOBRE
           </MKTypography>
           <MKTypography variant="body1" color="text">
-            Sobre Sobre Sobre Sobre Sobre Sobre Sobre Sobre Sobre Sobre Sobre Sobre Sobre Sobre
-            Sobre Sobre Sobre Sobre Sobre Sobre Sobre
+            A INCORTEC é uma empresa nacional de Tecnologia da Informação, que atua com consultoria
+            e desenvolvimento de soluções de TI, bem como, fábrica de software, desenvolvimento de
+            aplicações WEB e mobile, outsourcing de recursos e implementação de soluções. Nossa
+            equipe é conhecida pelo alto grau de especialização e conhecimento atuando no
+            desenvolvimento de soluções tecnológicas abrangentes com alta capacidade de integração
+            do mundo core com o mundo digital respondendo aos desafios da transformação digital.
           </MKTypography>
         </Grid>
       </Container>

@@ -464,7 +464,7 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
         left={0}
         zIndex={3}
         sx={({ palette: { transparent: transparentColor, white }, functions: { rgba } }) => ({
-          backgroundColor: transparent ? transparentColor.main : rgba(white.main, 0.8),
+          backgroundColor: transparent ? transparentColor.main : rgba(white.main, 1),
           backdropFilter: transparent ? "none" : `saturate(200%) blur(30px)`,
         })}
       >
